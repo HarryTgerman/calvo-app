@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="15px" viewBox="0 0 18 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="2" y="2" width="16" height="13" rx="0.75"></rect>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="16" height="13" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Sidebar-|-Edit-Mode" transform="translate(-70.000000, -281.000000)" fill="#132840" fill-rule="nonzero" stroke="#132840">
+            <g id="Group" transform="translate(70.000000, 281.000000)">
+                <use id="Rectangle-Copy" mask="url(#mask-2)" stroke-width="2" fill-opacity="0.1" stroke-linejoin="bevel" stroke-dasharray="2.25,1.5" xlink:href="#path-1"></use>
+                <rect id="Rectangle" stroke-width="0.75" fill-opacity="0.3" x="0.375" y="0.375" width="15.25" height="12.25" rx="0.75"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

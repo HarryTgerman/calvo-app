@@ -1,0 +1,390 @@
+
+
+body{
+    font-family: 'Heebo', sans-serif;
+}
+
+
+.mainViewContainer {
+    font-size: 18px;
+    display: flex;
+    flex-direction: row;
+}
+
+.mainViewContainer span {
+    justify-content: flex-start;
+}
+
+.WorkArea{
+    min-width: 980px;
+}
+
+.mainView{
+    padding-top: 80px;
+    display: flex;
+    flex-direction: column;
+    min-width: 1000px;
+}
+
+textarea, input{
+    text-align: center;
+    resize: none;
+    outline: none;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 0.1px;
+    text-align: center;
+  }
+  
+  line{
+    z-index: 1;
+  
+  }
+
+
+.rightSide{
+    display: flex;
+    flex-direction: row;
+    align-self: flex-end;
+}
+
+.rightSide .addBox .inputBox{
+    width: 103px;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    margin: 0 0 0 -5px;
+   position: relative;
+  background-color: transparent;
+}
+
+
+.rightSide .addBox .inputBox textarea, .rightSide .addBox .inputBox input{
+    width: 103px;
+    height: 42px;
+} 
+
+.inputBox textarea {
+    border: none;
+}
+
+
+.rightSide .addBox {
+    margin-left:2.5px;
+} 
+
+.rightSide .inputBox textarea, .rightSide .inputBox input{
+    width: 126px;
+    height: 74px;
+    border-radius: 3px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.16);
+    background-color: #ffffff;
+}
+
+.rightSide .inputBox {
+    margin-right: 22px;
+    display: flex;
+    width: 200px;
+    flex-direction: row;
+    align-self: flex-end;
+}
+
+
+.rightSide .addBox .dropAreaTop .inputBox  {
+    width: 100px;
+}
+
+.rightSide .addBox .dropAreaBottom .inputBox {
+
+}
+
+.rightSide .addBox{
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+.rightSide .addBox svg{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.rightSide .dropAreaTop .selectBox{
+    display: flex;
+    height: auto;
+    flex-direction: row;
+    position: absolute;
+    margin:  25px 0 0 -50px;
+}
+
+.rightSide .dropAreaBottom .selectBox{
+    display: flex;
+    height: auto;
+    flex-direction: row;
+    position: absolute;
+    margin: 48px 0 0 -52px;
+}
+
+.selectBox button {
+    width: 64px;
+    border: none;
+    text-align: center;
+    border-radius: 2px;
+}
+
+.rightSide .dropAreaBottom .inputBox{
+    justify-content: center;
+    width: 103px;
+    display: flex;
+    padding: 5px;
+    flex-direction: column;
+    margin: -20px 0 0 0;
+   position: relative;
+}
+
+.rightSide .dropAreaBottom .inputBox label{
+    width: 99px;
+    align-self: flex-end;
+}
+
+@media not all and (min-resolution:.001dpcm) { @media {
+
+    .rightSide .dropAreaBottom .inputBox{
+        justify-content: flex-end;
+        width: 103px;
+        display: flex;
+        padding: 5px;
+        flex-direction: column;
+        margin: 35px 0 0 0;
+       position: absolute;
+    }
+
+    .rightSide .addBox .dropAreaTop .inputBox{
+        width: 103px;
+        margin: 0;
+        margin-top: -10px;
+        
+    }
+    
+    
+}}
+
+
+.mainView .leftSide{
+   align-self: flex-start;
+}
+
+
+
+.leftSide .inputBox {
+    width: 200px;
+    margin-top: -20px;
+}
+
+.leftSide .inputBox div label {
+    align-self: flex-start;
+    font-size: 13px;
+}
+
+.inputBox {
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.rightSide .inputBox label {
+    width: auto;
+
+}
+
+.inputBox label {
+    text-transform: uppercase;
+    align-self: flex-start;
+    font-size: 8px !important;
+
+    height: 14px;
+    opacity: 0.55;
+    font-family: Heebo;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: 0.9px;
+    color: #132840;
+}
+
+.inputBox textarea, .inputBox input {
+    justify-content: center;
+    text-align: center;
+    width: 199px;
+    height: 40px;
+    border-radius: 3px;
+    border: none;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.16);
+    background-color: #ffffff;
+}
+
+.inputBox textarea::placeholder, .inputBox input::placeholder {
+    font-family: Heebo;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 0.1px;
+    text-align: center;
+    color: rgba(19, 40, 64, 0.14);
+}
+
+
+
+  line{
+    stroke: #C4C4C4;
+    stroke-width: 2;
+    line-height: 2;
+}
+
+.badge {
+    display: inline-block;
+    font-weight: bold;
+    padding: 0;
+    font-size: 8px;
+    font-weight: lighter !important;
+    line-height: 20px;
+    color: #C4C4C4 !important;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    background-color: #10AAFF;
+    border-radius:50px;
+    position: relative;
+    top: -1px;
+    right: 5px;
+    height: 10px;
+    width: 10px;
+  }
+
+  
+
+  .showAddSteamButton{
+    opacity: 1;
+    margin-top: 55px;
+    position: absolute;  
+    }
+
+  .showAddSteamButton:hover {
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+ 
+
+.dropAreaTop{
+    margin-top: -20px;
+    height: 100px;
+    width: auto;
+}
+
+.dropAreaBottom{
+    position: relative;
+    height: 100px;
+    width: auto;
+    margin-top: 20px;
+}
+
+.Topbar{
+    display: flex;
+    flex-direction: row;
+    align-self: flex-start;
+    margin: 50px 0 100px 33px;
+}
+
+
+.WorkArea{
+    padding-top: 108px;
+    padding-left: 90px;
+    padding-right: 144px;
+    text-align: left;
+}
+
+.WorkArea .Header {
+    padding-bottom: 26px;
+    border-bottom: 1px solid rgba(151,151,151, 0.22);
+    min-width: 1000px;
+}
+
+.WorkArea .Header p{
+    margin:0; 
+    width: auto;
+    height: auto;
+    opacity: 0.29;
+    font-family: Helvetica;
+    font-size: 18px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+}
+
+.WorkArea .Header input {
+    margin: 0;
+    max-width: 500px;
+    text-align: start;
+    height: 47px;
+    background: transparent;
+    border: none;
+    font-family: Heebo;
+    font-size: 32px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    font-weight: bold;
+    letter-spacing: 0.3px;
+    color: #132840;
+}
+
+.addButton{
+    display: flex;
+    justify-content: center;
+    height: 20px;
+    width: 20px;
+    background-color: rgba(0, 118, 255, 0.07);
+}
+
+.addButton:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+
+.deleteButton{
+    display: flex;
+    justify-content: center;
+    height: 20px;
+    width: 20px;
+    background-color: rgba(255,97,117, 0.4);
+}
+
+.deleteButton:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.dropAreaTop .addButton{
+    position: absolute;
+    margin: 25px 0 0 38px;
+  }
+
+  .dropAreaBottom .addButton{
+    position: absolute;
+    margin: 48px 0 0 38px;
+  }
+
+

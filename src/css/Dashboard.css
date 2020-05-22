@@ -1,0 +1,345 @@
+.Manage-button{
+    margin-right: 20px; 
+    float: right;
+    width: 152px;
+    height: 46px;
+    opacity: 0.38;
+    border-radius: 4px;
+    background-color: #d8d8d8;
+    font-family: Heebo;
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 0.2px;
+    color: rgba(19, 40, 64, 1)
+}
+
+.Add-Project-button{
+    align-self: center;
+    font-family: Heebo;
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 0.2px;
+    color: #ffffff;
+    float: right;
+    width: 152px;
+    height: 46px;
+    border-radius: 4px;
+    background-color: #3185fc;
+}
+
+.ModelList{
+    width: 1000px;
+    padding-top: 37px;
+    padding-left: 0;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.Model{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    /* margin-right:  70px; */
+    margin-bottom: 80px;
+    border-radius: 14.1px;
+    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.32);
+    background-color: #ffffff;
+}
+
+
+
+.Model h3 {
+    margin: 0;
+    height: 24px;
+    font-family: Heebo;
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 0.2px;
+    color: #132840;
+}
+
+.Model .Line {
+    margin-top: 20px;
+}
+
+.Model img {
+    width: 221px;
+  height: 156px;
+}
+
+.Model p {
+    margin: 0;
+    height: 18px;
+    opacity: 0.41;
+    font-family: Heebo;
+    font-size: 12px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 0.1px;
+    color: rgba(19, 40, 64, 0.5);
+}
+
+.lds-ring {
+    position: absolute;
+    margin-top: 200px;
+    left: 50%;
+    display: inline-block;
+    position: relative;
+    width: 64px;
+    height: 64px;
+    opacity: 0.6;
+  }
+  .lds-ring div {
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    width: 51px;
+    height: 51px;
+    
+    margin: 6px;
+    border: 6px solid #0076ff;
+    border-radius: 50%;
+    animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+    border-color: #0076ff transparent transparent transparent;
+  }
+  .lds-ring div:nth-child(1) {
+    animation-delay: -0.45s;
+  }
+  .lds-ring div:nth-child(2) {
+    animation-delay: -0.3s;
+  }
+  .lds-ring div:nth-child(3) {
+    animation-delay: -0.15s;
+  }
+  @keyframes lds-ring {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  .Model .CancelProject{
+    position: absolute;
+    width: 31px;
+    height: 31px;
+    margin-top: -25px;
+    margin-left: 220px;
+  }
+
+  
+  .Model .CancelProject img{
+    width: 31px;
+    height: 31px;
+  }
+
+.rotateLeft {
+   
+}
+
+.rotateRight {
+ 
+}
+
+.rotateRight:hover, .rotateLeft:hover {
+  animation: none;
+}
+
+
+.rotateRight {
+  animation: shakeRight 1.2s cubic-bezier(.36,.07,.19,.97) infinite;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+.rotateLeft {
+  animation: shakeLeft 1.2s cubic-bezier(.36,.07,.19,.97) infinite;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+@keyframes shakeRight {
+  10%, 90% {
+    -ms-transform: rotate(-1deg); /* IE 9 */
+    -webkit-transform: rotate(-1deg); /* Safari 3-8 */
+    transform: rotate(-1deg);
+  }
+  
+  20%, 80% {
+    -ms-transform: rotate(1deg); /* IE 9 */
+    -webkit-transform: rotate(1deg); /* Safari 3-8 */
+    transform: rotate(1deg);
+  }
+
+  30%, 50%, 70% {
+    -ms-transform: rotate(-1deg); /* IE 9 */
+    -webkit-transform: rotate(-1deg); /* Safari 3-8 */
+    transform: rotate(-1deg);
+  }
+
+  40%, 60% {
+    -ms-transform: rotate(1deg); /* IE 9 */
+    -webkit-transform: rotate(1deg); /* Safari 3-8 */
+    transform: rotate(1deg);
+  }
+}
+
+@keyframes shakeLeft {
+  10%, 90% {
+    -ms-transform: rotate(1deg); /* IE 9 */
+    -webkit-transform: rotate(1deg); /* Safari 3-8 */
+    transform: rotate(1deg)
+  }
+  
+  20%, 80% {
+    -ms-transform: rotate(-1deg); /* IE 9 */
+    -webkit-transform: rotate(-1deg); /* Safari 3-8 */
+    transform: rotate(-1deg);
+  }
+
+  30%, 50%, 70% {
+    -ms-transform: rotate(1deg); /* IE 9 */
+    -webkit-transform: rotate(1deg); /* Safari 3-8 */
+    transform: rotate(1deg);
+  }
+
+  40%, 60% {
+    -ms-transform: rotate(-1deg); /* IE 9 */
+    -webkit-transform: rotate(-1deg); /* Safari 3-8 */
+    transform: rotate(-1deg);
+  }
+}
+
+
+.isEmptyContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.isEmptyContainer p{
+  align-self: center;
+  opacity: 0.39;
+  font-family: Heebo;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 0.1px;
+  color: #132840;
+  margin-top: 127px
+}
+
+.isEmptyContainer .projectsimg{
+  align-self: center;
+  margin-top: 40px;
+}
+
+
+.isEmptyContainer .emptyArrow{
+  position: absolute;
+  align-self: flex-end;
+  margin-top: -160px;
+  margin-left: -55px;
+}
+
+.WorkArea .Header .headerRow{
+  min-width: 1000px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.WorkArea .Header div .buttonSection{
+  display: flex;
+  flex-direction: row;
+}
+
+.WorkArea .Header button{
+  align-self: flex-end;
+
+}
+
+.ReactModal__Content input{
+  width: 200px;
+  height: 33px;
+  padding-left: 12px;
+  text-align: left;
+  margin-bottom: 14px;
+}
+
+.ReactModal__Content input::placeholder{
+  color: #000000;  
+  opacity: 0.3;
+  padding: 0;
+
+}
+
+.ReactModal__Content label{
+  font-size: 10px !important;
+ align-self: center;
+  text-align: left;
+}
+
+.ReactModal__Content button{
+  align-self: center;
+  font-size: 12px !important;
+  margin-top: 70px;
+  font-family: Heebo;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  border: none;
+  line-height: normal;
+  letter-spacing: 0.2px;
+  color: #ffffff;
+  float: right;
+  width: 200px;
+  height: 33px;
+  border-radius: 4px;
+  background-color: #3185fc;
+
+}
+
+
+
+
+
+
+.WorkArea .Header h3{
+  align-self: flex-start;
+  margin: 0;
+  width: 370px;
+  text-align: start;
+  height: 47px;
+  background: transparent;
+  border: none;
+  font-family: Heebo;
+  font-size: 32px;
+  font-weight: 700;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  font-weight: bold;
+  letter-spacing: 0.3px;
+  color: #132840;
+}

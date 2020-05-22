@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="34" height="44" viewBox="0 0 34 44">
+    <defs>
+        <filter id="a" width="192.3%" height="166.7%" x="-46.2%" y="-33.3%" filterUnits="objectBoundingBox">
+            <feOffset dy="2" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="2"/>
+            <feColorMatrix in="shadowBlurOuter1" result="shadowMatrixOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.5 0"/>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"/>
+                <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+        </filter>
+        <linearGradient id="b" x1="50%" x2="50%" y1="100%" y2="2.443%">
+            <stop offset="0%" stop-color="#6CA9FF"/>
+            <stop offset="100%" stop-color="#3185FC"/>
+        </linearGradient>
+        <linearGradient id="c" x1="50%" x2="50%" y1="0%" y2="179.676%">
+            <stop offset="0%" stop-color="#FFF" stop-opacity="0"/>
+            <stop offset="100%" stop-color="#FFF"/>
+        </linearGradient>
+    </defs>
+    <g fill="none" fill-rule="evenodd" filter="url(#a)" transform="translate(4 2)">
+        <path fill="#F3F5F8" fill-rule="nonzero" d="M20.076 22.55v13.385l-6.945-3-7.11 3V23.173z"/>
+        <ellipse cx="13" cy="12.956" fill="url(#b)" fill-rule="nonzero" rx="13" ry="12.956"/>
+        <ellipse cx="13" cy="13.154" fill="url(#c)" fill-opacity=".4" fill-rule="nonzero" rx="8.634" ry="8.604"/>
+        <path fill="#FFF" d="M17.069 11.41l-2.807-.426L13 8.308l-1.262 2.676-2.807.427 2.03 2.072-.48 2.935L13 15.03l2.519 1.387-.48-2.935 2.03-2.072"/>
+    </g>
+</svg>
